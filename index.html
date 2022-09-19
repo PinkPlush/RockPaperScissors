@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>Rock Paper Scissors Game</h1>
-    <script src="index.js"></script>
+    <div class="game-container">
+        <button id="rock" onclick=""><img src="./images/rock.png" alt="rock"></button>
+        <button id="paper" onclick=""><img src="./images/paper.png" alt="paper"></button>
+        <button id="scissors" onclick=""><img src="./images/scissors.png" alt="scissors"></button>
+    </div>
+
+        <div class="score-name">
+            <h1>User Score</h1>
+            <h1>Computer Score</h1>
+        </div>
+        <div class="score-counter">
+        <h2 id="user-score">0</h2>
+        <h2 id="computer-score">0</h2>
+        </div>
+    <!--<embed src="./music/Нурминский - Валим (Right Version) Gachi Remix (mp3-2020.com).mp3" loop="true" autostart="true" width="2" height="0">-->
 </body>
 </html>
