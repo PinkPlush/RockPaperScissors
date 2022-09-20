@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
+    <div class="title">
     <h1>Rock Paper Scissors Game</h1>
-    <script src="index.js"></script>
+    <h2>Make your choice</h2>
+    </div>
+    <div class="game-container">
+        <button id="rock">
+            <figure><img src="./images/rock.png"/></figure><audio id="rck" src="sounds/rock.mp3"></audio></button>
+        <button id="paper">
+            <figure><img src="./images/paper.png" /></figure><audio id="ppr" src="sounds/paper.mp3"></audio></button>
+        <button id="scissors">
+            <figure><img src="./images/scissors.png" /></figure><audio id="scs" src="sounds/scrissors.mp3"></audio></button>
+    </div>
+    <div class="score-text">
+        <p id="score-text"></p>
+        <button id="restart"><img src="./images/rotate.png" alt="restart button"></button>
+    </div>
+        <div class="score-name">
+            <h1>User Score</h1>
+            <h1>Computer Score</h1>
+        </div>
+        <div class="score-counter">
+        <h2 id="user-score">0</h2>
+        <h2 id="computer-score">0</h2>
+        </div>
+        <embed src="./music/Нурминский - Валим (Right Version) Gachi Remix (mp3-2020.com).mp3" loop="true" autostart="true" width="2" height="0">
 </body>
 </html>
